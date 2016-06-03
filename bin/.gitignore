@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 /frame.class
 /Frame.class
 /Frame$Couleur.class
+=======
+/Bateau.class
+/Type.class
+/Animal.class
+/Ship.class
+>>>>>>> branch 'master' of https://github.com/Naowaki/B3-bataille-navale.git
