@@ -1,7 +1,7 @@
 
 public class Joueur {
 	
-	public Joueur(){
+	public Joueur(String nom){
 		
 	}
 	
