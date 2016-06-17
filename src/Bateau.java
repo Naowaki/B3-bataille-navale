@@ -28,7 +28,7 @@ enum Ship
     // Membres :
     private String nom;
     private Integer taille;
-    private ArrayList<Frame> casesOccupées;
+    private ArrayList<Frame> casesOccupees;
     
 
     Ship(String nom, Integer taille)
@@ -40,11 +40,11 @@ enum Ship
     public String getNom(){ return this.nom; }
     public Integer getTaille(){ return this.taille; }
 
-	public ArrayList<Frame> getCasesOccupées() {
-		return casesOccupées;
+	public ArrayList<Frame> getCasesOccupees() {
+		return casesOccupees;
 	}
 
-	public void setCasesOccupées(ArrayList<Frame> casesOccupées) {
-		this.casesOccupées = casesOccupées;
+	public void setCasesOccupees(ArrayList<Frame> casesOccupees) {
+		this.casesOccupees = casesOccupees;
 	}
 }
