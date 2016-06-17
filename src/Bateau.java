@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Bateau {
 	private Ship ship;
@@ -25,8 +26,10 @@ enum Ship
 	SUBMARINE("Submarine",1);
 
     // Membres :
-    private final String nom;
-    private final Integer taille;
+    private String nom;
+    private Integer taille;
+    private ArrayList<Frame> casesOccupées;
+    
 
     Ship(String nom, Integer taille)
     {
@@ -36,4 +39,12 @@ enum Ship
 
     public String getNom(){ return this.nom; }
     public Integer getTaille(){ return this.taille; }
+
+	public ArrayList<Frame> getCasesOccupées() {
+		return casesOccupées;
+	}
+
+	public void setCasesOccupées(ArrayList<Frame> casesOccupées) {
+		this.casesOccupées = casesOccupées;
+	}
 }
