@@ -7,7 +7,7 @@ public class Player {
 	private Plateau monplat;
 	
 	public void PoserBateau(Bateau bat,String caseDepart,Boolean direction){
-	this.monplat.setShipPosition(bat,caseDepart,direction);
+	//this.monplat.setShipPosition(bat,caseDepart,direction);
 	}
 	public ArrayList<Bateau> getBateaux() {
 		return bateaux;
