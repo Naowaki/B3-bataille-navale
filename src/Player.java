@@ -5,6 +5,7 @@ public class Player {
 	private ArrayList<Bateau> bateaux;
 	private String nom;
 	private Plateau monplat;
+
 	
 	public Player(String n,Plateau plat){
 		this.setNom(n);

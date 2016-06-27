@@ -5,7 +5,7 @@ public class Main {
 		Plateau platoJ2 = new Plateau();
 		Player Joueur1 = new Player("Jean-Charle", platoJ1);
 		Player Joueur2 = new Player("In the Navy", platoJ2);
-		
+		/*rajout de .Travis.yml*/
 		while(Joueur1.getBateaux().size() != 0 && Joueur2.getBateaux().size() != 0 ){
 			
 		}
