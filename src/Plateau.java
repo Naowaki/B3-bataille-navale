@@ -17,11 +17,11 @@ public class Plateau {
 		}
 	}
 	
-	public List<Frame> setShipPosition(Bateau b, String coord, Boolean horizontal) {
+	public void setShipPosition(Bateau b, String coord, Boolean horizontal) {
 		int taille = b.getShip().getTaille();
 		List<String> lettres = Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "j");
 		
-		List<Frame> frames = new ArrayList<Frame>();
+		ArrayList<Frame> frames = new ArrayList<Frame>();
 		
 		Frame f = new Frame(coord.split(":")[0], Integer.parseInt(coord.split(":")[1]));
 		frames.add(f);
@@ -38,17 +38,6 @@ public class Plateau {
 			}
 		}
 		
-		return frames;
-	}
-	
-	private Frame searchFrame(String col, int ligne) {
-		Frame frame = new Frame(col, ligne);
-		for (Frame f : this.cases) {
-			if (frame.equals(f)) {
-				return f;
-			}
-		}
-		
-		return null;
+		b.getShip().setCasesOccupees(frames);
 	}
 }
