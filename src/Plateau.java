@@ -23,21 +23,25 @@ public class Plateau {
 		
 		ArrayList<Frame> frames = new ArrayList<Frame>();
 		
-		Frame f = new Frame(coord.split(":")[0], Integer.parseInt(coord.split(":")[1]));
+		Frame f = new Frame(coord.split(":")[0], Integer.parseInt(coord.split(":")[1]), true);
 		frames.add(f);
 		
 		if (horizontal) {
 			for (int i = lettres.indexOf(coord.split(":")[0]) ; i < lettres.indexOf(coord.split(":")[0]) + taille ; i++){
-				Frame frame = new Frame(lettres.get(i), Integer.parseInt(coord.split(":")[1]));
+				Frame frame = new Frame(lettres.get(i), Integer.parseInt(coord.split(":")[1]), true);
 				frames.add(frame);
 			}
 		} else {
 			for (int i = Integer.parseInt(coord.split(":")[1]) ; i < Integer.parseInt(coord.split(":")[1]) + taille ; i++){
-				Frame frame = new Frame(coord.split(":")[0], i);
+				Frame frame = new Frame(coord.split(":")[0], i, true);
 				frames.add(frame);
 			}
 		}
 		
 		b.getShip().setCasesOccupees(frames);
+	}
+	
+	public Frame frameAttacked(String coord) {
+		return new Frame(coord.split(":")[0], Integer.parseInt(coord.split(":")[1]));		
 	}
 }
